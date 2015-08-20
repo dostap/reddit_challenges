@@ -52,7 +52,7 @@ public class easy3 {
 		ArrayList<Integer> spaces = new ArrayList<>();
 		char character;
 		char newCharacter;
-		int shift = 5; 
+		int shift; 
 		int origPosition;
 		int newPosition;
 		String choice = "";
@@ -65,6 +65,8 @@ public class easy3 {
 		System.out.println("Input the sentence you want to encrypt: ");
 		sentence = scan.nextLine();
 		sentence = sentence.trim();
+		System.out.println("Input the shift (right) you would like to use 1-25");
+		shift = scan.nextInt();
 		
 		//clean up spaces in the input
 		for(int i =0; i < sentence.length(); i++)
